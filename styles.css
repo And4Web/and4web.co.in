@@ -9,7 +9,10 @@
 .main-title{
   text-align: center;
 }
-
+.main-logo{
+  height: 4rem;
+  width: auto;
+}
 .main-desc{
   text-align: center;
 }
