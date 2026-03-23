@@ -1,7 +1,11 @@
 *{
   margin: 0;padding: 0;box-sizing: border-box;
 }
-
+.main-title-container{
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
 .main-title{
   text-align: center;
 }
