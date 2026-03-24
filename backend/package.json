@@ -6,13 +6,32 @@
     "freelance",
     "full",
     "stack",
-    "development"
+    "development",
+    "node.js",
+    "react.js",
+    "mongodb",
+    "frontend",
+    "backend",
+    "server",
+    "mobile",
+    "react",
+    "node",
+    "internet"
   ],
   "license": "ISC",
   "author": "Anand Shukla",
   "type": "commonjs",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js",
+    "build": "node build"
+  },
+  "dependencies": {
+    "cors": "^2.8.6",
+    "express": "^5.2.1"
+  },
+  "devDependencies": {
+    "nodemon": "^3.1.14"
   }
 }
