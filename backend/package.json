@@ -1,0 +1,18 @@
+{
+  "name": "and4web",
+  "version": "1.0.0",
+  "description": "Full Stack Development",
+  "keywords": [
+    "freelance",
+    "full",
+    "stack",
+    "development"
+  ],
+  "license": "ISC",
+  "author": "Anand Shukla",
+  "type": "commonjs",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  }
+}
