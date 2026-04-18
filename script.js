@@ -6,4 +6,10 @@ console.log('Netlify client')
 //   }
 //   return response.json();
 // }).then((data)=>console.log(data));
+const api_base_url = "https://and4web-co-in-backend.onrender.com/";
 
+function privateMessage(){
+  console.log("Private message sending...")
+
+  fetch(`${api_base_url}/test`).then(response=>response.json()).then(data=>console.log("data from server >>> ", data)).catch(e=>console.log("Error connecting to the server >>> ", e));
+}
