@@ -6,6 +6,12 @@
 html{
   font-family: 'Courier New', Courier, monospace;
 }
+body{
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
 .main-title-container{
   font-family: "Archivo Black", sans-serif;
   /* font-weight: 400;
@@ -13,7 +19,7 @@ html{
   font-weight: bolder;
   font-size: 3rem;
   /* font-style: normal; */
-  border-bottom: 1px solid black;
+  /* border-bottom: 1px solid black; */
   display: flex;
   align-items: center;
   justify-content: center;
@@ -44,10 +50,10 @@ html{
   margin-top: 2rem;
   padding: .5rem;
   font-size: 1rem;
-  position: absolute;
+  /* position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translate(-50%, -50%); */
   /* border: 1px solid grey; */
   border: none;
   cursor: pointer;
@@ -59,4 +65,126 @@ html{
   box-shadow: 1px 1px 2px grey;
   font-size: .9rem;
   border: 1px solid grey;
+}
+
+.hero-brand{
+  /* border: 1px solid black; */
+  height: 80vh;
+  width: auto;
+  /* background-color: red; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  /* top: 50px; */
+}
+
+.hero-image{
+  height: 80vh;
+  width: auto;
+  /* border: 1px solid black; */
+  border-radius: 50%;
+  /* position: absolute;
+  top: 55%;
+  left: 50%;
+  transform: translate(-50%, -50%); */
+  z-index: -1;
+  opacity: .5;
+}
+.hero-title{
+  font-family: "Archivo Black", sans-serif;
+  font-size: 4rem;
+  text-align: center;
+  z-index: 4;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.message-btn{
+  position: absolute;
+  top: 80%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border: none;
+  outline: none;
+  padding: 1rem;
+  font-size: 1.2rem;
+  background-color: whitesmoke;
+  border-radius: 5px;
+  cursor: pointer;
+  box-shadow: 1px 1px 15px gray, inset -1px -1px 2px gold;
+}
+
+.footer{
+  position: fixed;
+  bottom: 0;
+  text-align: center;
+  width: auto;
+  border-top: 1px solid black;
+}
+
+
+
+@media screen and (max-width: 900px) {
+  .main-title-container{
+    font-size: 2.8rem;
+  }
+  .main-logo{
+  height: 3.7rem;  
+  }
+
+  .hero-image{
+    height: 70vh;
+  }
+  .hero-title{
+    font-size: 3.8rem;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .main-title-container{
+    font-size: 2.5rem;
+  }
+  .main-logo{
+  height: 3.4rem;  
+}
+  .hero-image{
+    height: 60vh;
+  }
+  .hero-title{
+    font-size: 3.5rem;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .main-title-container{
+    font-size: 2.2rem;
+  }
+  .main-logo{
+  height: 3.1rem;  
+}
+  .hero-image{
+    height: 50vh;
+  }
+  .hero-title{
+    font-size: 3.2rem;
+  }
+}
+
+@media screen and (max-width: 300px) {
+  .main-title-container{
+    font-size: 2rem;
+  }
+  .main-logo{
+  height: 2.8rem;  
+}
+  .hero-image{
+    height: 40vh;
+  }
+  .hero-title{
+    font-size: 2.9rem;
+  }
 }
