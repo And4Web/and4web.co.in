@@ -6,11 +6,12 @@ const app = express();
 const PORT = process.env.PORT || 5000;
 
 app.use(express.json());
-
+app.use(express.urlencoded({extends: true}));
 app.use(cors({
   origin: process.env.CLIENT_URL,
   credentials: true,
 }));
+app.use(express.static('public'))
 
 app.get('/', (req, res)=>{
   res.send("hello world!")
