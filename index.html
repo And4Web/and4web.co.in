@@ -7,6 +7,7 @@
   <meta name="description" content="MERN stack Full stack development using Node.js, React.js, MongoDB, Express.js. Freelance service most efficient, highly scalable, fast web and mobile apps for business and personal use.">
   <meta name="robots" content="index, follow">
   <meta name="robots" content="noindex, nofollow">
+  
   <link rel="stylesheet" href="styles.css">
   <title>Full Stack Development - And4Web.co.in</title>
 </head>
@@ -21,8 +22,38 @@
   <!-- <p class="main-intro">Hello, I'm Anand shukla. I am a full stack developer and work independently. Contact me for any work related to backend or frontend or web3 smart contract development. Server management, Database management, creating beautiful User interfaces and highly secure trustworthy applications is my speciality. Thanks</p> -->
 
 <!-- Navbar Section Starts -->
-
-  <ul class="navbar">
+ <div class="dropdown">
+  <button onclick="dropdown()" class="dropdown-menubar" id="dropdown-btn">
+    <div class="dropdown-image">
+      <div class="line line-1"></div>
+      <div class="line line-2"></div>
+      <div class="line line-3"></div>
+    </div>
+  </button>
+  <!-- dropdown starts here -->
+  <div class="dropdown-content" id="dropdown-content">
+    <ul class="dd-navbar">
+    <li class="dd-menu">
+      <a href="#about" class="dd-menu-link">About</a>
+    </li>
+    <li class="dd-menu">
+      <a href="#projects" class="dd-menu-link">Projects</a>
+    </li>
+    <li class="dd-menu">
+      <a href="#contact" class="dd-menu-link">Contact</a>
+    </li>
+    <li class="dd-menu">
+      <a href="#web3" class="dd-menu-link">Web3.0</a>
+    </li>
+    <li class="dd-menu">
+      <a href="#services" class="dd-menu-link services-link">Hosting</a>
+    </li>
+  </ul>
+  </div>
+ </div>
+  
+  <!-- dropdown ends here -->
+  <ul class="navbar" id="navbar">
     <li class="menu">
       <a href="#about" class="menu-link">About</a>
     </li>
@@ -34,6 +65,9 @@
     </li>
     <li class="menu">
       <a href="#web3" class="menu-link">Web3.0</a>
+    </li>
+    <li class="menu">
+      <a href="#services" class="menu-link services-link">Hosting</a>
     </li>
   </ul>
 
@@ -79,6 +113,12 @@
     <h1 class="page-title">Contact</h1>
   </div>
  <!-- Contact Section Ends -->
+
+ <!-- Services Section Starts -->
+  <div class="services" id="services">
+    <h1 class="page-title">Services</h1>
+  </div>
+ <!-- Services Section Ends -->
 
 
 
