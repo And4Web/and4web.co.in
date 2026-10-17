@@ -1,141 +1,205 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <link rel="icon" type="image/png" href="images/laptop1.svg">
-  <meta name="description" content="MERN stack Full stack development using Node.js, React.js, MongoDB, Express.js. Freelance service most efficient, highly scalable, fast web and mobile apps for business and personal use.">
-  <meta name="robots" content="index, follow">
-  <meta name="robots" content="noindex, nofollow">
-  
-  <link rel="stylesheet" href="styles.css">
-  <title>Full Stack Development - And4Web.co.in</title>
-</head>
-<body>
-  <div class="main-title-container">  
-    <a href="/">
-      <img class="main-logo" src="images/laptop1.svg" alt="logo image"> 
-    </a>  
-    <h3 class="main-title ">WebSolutions</h3>    
-  </div>
- 
-  <!-- <p class="main-intro">Hello, I'm Anand shukla. I am a full stack developer and work independently. Contact me for any work related to backend or frontend or web3 smart contract development. Server management, Database management, creating beautiful User interfaces and highly secure trustworthy applications is my speciality. Thanks</p> -->
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-<!-- Navbar Section Starts -->
- <div class="dropdown">
-  <button onclick="dropdown()" class="dropdown-menubar" id="dropdown-btn">
-    <div class="dropdown-image">
-      <div class="line line-1"></div>
-      <div class="line line-2"></div>
-      <div class="line line-3"></div>
-    </div>
-  </button>
-  <!-- dropdown starts here -->
-  <div class="dropdown-content" id="dropdown-content">
-    <ul class="dd-navbar">
-    <li class="dd-menu">
-      <a href="#about" class="dd-menu-link">About</a>
-    </li>
-    <li class="dd-menu">
-      <a href="#projects" class="dd-menu-link">Projects</a>
-    </li>
-    <li class="dd-menu">
-      <a href="#contact" class="dd-menu-link">Contact</a>
-    </li>
-    <li class="dd-menu">
-      <a href="#web3" class="dd-menu-link">Web3.0</a>
-    </li>
-    <li class="dd-menu">
-      <a href="#services" class="dd-menu-link services-link">Hosting</a>
-    </li>
-  </ul>
-  </div>
- </div>
-  
-  <!-- dropdown ends here -->
-  <ul class="navbar" id="navbar">
-    <li class="menu">
-      <a href="#about" class="menu-link">About</a>
-    </li>
-    <li class="menu">
-      <a href="#projects" class="menu-link">Projects</a>
-    </li>
-    <li class="menu">
-      <a href="#contact" class="menu-link">Contact</a>
-    </li>
-    <li class="menu">
-      <a href="#web3" class="menu-link">Web3.0</a>
-    </li>
-    <li class="menu">
-      <a href="#services" class="menu-link services-link">Hosting</a>
-    </li>
-  </ul>
+        <link rel="stylesheet" href="assets/css/styles.css">
+
+        <!-- =====BOX ICONS===== -->
+        <link href='https://cdn.jsdelivr.net/npm/boxicons@2.0.5/css/boxicons.min.css' rel='stylesheet'>
+
+        <title>Full Stack Development - and4web.co.in</title>
+    </head>
+    <body>
+        <!--===== HEADER =====-->
+        <header class="l-header">
+            <nav class="nav bd-grid">
+                <div>
+                    <a href="#" class="nav__logo">And4Web</a>
+                </div>
+
+                <div class="nav__menu" id="nav-menu">
+                    <ul class="nav__list">
+                        <li class="nav__item"><a href="#home" class="nav__link active-link">Home</a></li>
+                        <li class="nav__item"><a href="#about" class="nav__link">About</a></li>
+                        <li class="nav__item"><a href="#skills" class="nav__link">Skills</a></li>
+                        <li class="nav__item"><a href="#work" class="nav__link">Work</a></li>
+                        <li class="nav__item"><a href="#contact" class="nav__link">Contact</a></li>
+                    </ul>
+                </div>
+
+                <div class="nav__toggle" id="nav-toggle">
+                    <i class='bx bx-menu'></i>
+                </div>
+            </nav>
+        </header>
+
+        <main class="l-main">
+            <!--===== HOME =====-->
+            <section class="home bd-grid" id="home">
+                <div class="home__data">
+                    <h1 class="home__title">Full Stack <span class="home__title-color">Development</span></h1>
+
+                    <a href="#" class="button">Contact</a>
+                </div>
+
+                <div class="home__social">
+                    <a href="https://www.linkedin.com/and4web" class="home__social-icon"><i class='bx bxl-linkedin'></i></a>
+                    <a href="https://www.twitter.com/and4web" class="home__social-icon"><i class='bx bxl-twitter' ></i></a>
+                    <a href="https://www.github.com/and4web" class="home__social-icon"><i class='bx bxl-github' ></i></a>
+                </div>
+
+                <!-- <div class="home__img">
+                    <svg class="home__blob" viewBox="0 0 479 467" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                        <mask id="mask0" mask-type="alpha">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                        </mask>
+                        <g mask="url(#mask0)">
+                            <path d="M9.19024 145.964C34.0253 76.5814 114.865 54.7299 184.111 29.4823C245.804 6.98884 311.86 -14.9503 370.735 14.143C431.207 44.026 467.948 107.508 477.191 174.311C485.897 237.229 454.931 294.377 416.506 344.954C373.74 401.245 326.068 462.801 255.442 466.189C179.416 469.835 111.552 422.137 65.1576 361.805C17.4835 299.81 -17.1617 219.583 9.19024 145.964Z"/>
+                            <image class="home__blob-img" x="50" y="60" href="assets/img/perfil.png"/>
+                        </g>
+                    </svg> -->
+                </div>
+            </section>
+
+            <!--===== ABOUT =====-->
+            <section class="about section " id="about">
+                <h2 class="section-title">About</h2>
+
+                <div class="about__container bd-grid">
+                    <div class="about__img">
+                        <img src="assets/img/main.png" alt="">
+                    </div>
+                    
+                    <div>
+                        <h2 class="about__subtitle">I'am Anand</h2>
+                        <p class="about__text">Driven Full-Stack MERN Developer specializing in building scalable, user-centric web applications. I combine robust backend logic using Node.js and Express with dynamic, responsive frontends built on React. Passionate about writing clean code and solving complex problems, I transform creative ideas into seamless, high-performing digital experiences from database to UI.</p>           
+                    </div>                                   
+                </div>
+            </section>
+
+            <!--===== SKILLS =====-->
+            <section class="skills section" id="skills">
+                <h2 class="section-title">Skills</h2>
+
+                <div class="skills__container bd-grid">          
+                    <div>
+                        <h2 class="skills__subtitle">Profesional Skills</h2>
+                        <p class="skills__text">Mastering the MERN stack, I engineer seamless digital solutions from database to user interface. My expertise spans architectural database design with MongoDB, robust API development using Express and Node.js, and crafting fluid, highly responsive UIs with React. I leverage modern frontend styling tools and state management to deliver clean, optimized, and performant code.</p>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-html5 skills__icon'></i>
+                                <span class="skills__name">HTML5</span>
+                            </div>
+                            <div class="skills__bar skills__html">
+
+                            </div>
+                            <div>
+                                <span class="skills__percentage">95%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-css3 skills__icon'></i>
+                                <span class="skills__name">CSS3</span>
+                            </div>
+                            <div class="skills__bar skills__css">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxl-javascript skills__icon' ></i>
+                                <span class="skills__name">JAVASCRIPT</span>
+                            </div>
+                            <div class="skills__bar skills__js">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">65%</span>
+                            </div>
+                        </div>
+                        <div class="skills__data">
+                            <div class="skills__names">
+                                <i class='bx bxs-paint skills__icon'></i>
+                                <span class="skills__name">UX/UI</span>
+                            </div>
+                            <div class="skills__bar skills__ux">
+                                
+                            </div>
+                            <div>
+                                <span class="skills__percentage">85%</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div>              
+                        <img src="assets/img/work3.jpg" alt="" class="skills__img">
+                    </div>
+                </div>
+            </section>
+
+            <!--===== WORK =====-->
+            <section class="work section" id="work">
+                <h2 class="section-title">Work</h2>
+
+                <div class="work__container bd-grid">
+                    <a href="" class="work__img">
+                        <img src="assets/img/work1.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work2.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work3.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work4.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work5.jpg" alt="">
+                    </a>
+                    <a href="" class="work__img">
+                        <img src="assets/img/work6.jpg" alt="">
+                    </a>
+                </div>
+            </section>
+
+            <!--===== CONTACT =====-->
+            <section class="contact section" id="contact">
+                <h2 class="section-title">Contact</h2>
+
+                <div class="contact__container bd-grid">
+                    <form action="" class="contact__form">
+                        <input type="text" placeholder="Name" class="contact__input">
+                        <input type="mail" placeholder="Email" class="contact__input">
+                        <textarea name="" id="" cols="0" rows="10" class="contact__input"></textarea>
+                        <input type="button" value="Send" class="contact__button button">
+                    </form>
+                </div>
+            </section>
+        </main>
+
+        <!--===== FOOTER =====-->
+        <footer class="footer">
+            <p class="footer__title">And4Web</p>
+            <div class="footer__social">
+                <a href="https://www.facebook.com/and4web" class="footer__icon"><i class='bx bxl-facebook' ></i></a>
+                <a href="https://www.instagram.com/and4web" class="footer__icon"><i class='bx bxl-instagram' ></i></a>
+                <a href="https://www.twitter.com/and4web" class="footer__icon"><i class='bx bxl-twitter' ></i></a>
+            </div>
+            <p class="footer__copy">&#169; And4Web.co.in. All rigths reserved.</p>
+        </footer>
 
 
- <!-- Navbar Section Ends -->
+        <!--===== SCROLL REVEAL =====-->
+        <script src="https://unpkg.com/scrollreveal"></script>
 
-
- <!-- Hero Section Starts -->
-
-  <div class="hero-brand">
-    <img class="hero-image" src="./images/main.png" alt="Hero image">
-      <h1 class="hero-title glitter-text">Full Stack Development</h1>
-      <button onclick="privateMessage()" class="message-btn">Private Chat</button>
-  </div>
-
- <!-- Hero Section Ends -->
-
- <!-- Projects Section Starts -->
-  <div class="projects" id="projects">
-    <h1 class="page-title">Projects</h1>
-    <div class="projects-sections">
-      <div class="left-projects"></div>
-      <div class="right-projects"></div>
-    </div>
-  </div>
-
- <!-- Projects Section Ends -->
-
- <!-- Web3.0 Section Starts -->
-  <div class="web3" id="web3">
-    <h1 class="page-title">Web3.0</h1>
-  </div>
- <!-- Web3.0 Section Ends -->
-
- <!-- About Section Starts -->
-  <div class="about" id="about">
-    <h1 class="page-title">About</h1>
-  </div>
- <!-- About Section Ends -->
-
- <!-- Contact Section Starts -->
-  <div class="contact" id="contact">
-    <h1 class="page-title">Contact</h1>
-  </div>
- <!-- Contact Section Ends -->
-
- <!-- Services Section Starts -->
-  <div class="services" id="services">
-    <h1 class="page-title">Services</h1>
-  </div>
- <!-- Services Section Ends -->
-
-
-
-
-  
-  <button class="to-top">
-    <a href="#">⬆</a>
-  </button>
-  <!-- Footer section Starts -->
-   
-  <footer class="footer">
-    <p>&copy;and4web.co.in, 2025-2026.</p>
-  </footer>
-
-  <!-- Footer Section Ends -->
-  
-  
-  <script src="script.js"></script>
-</body>
+        <!--===== MAIN JS =====-->
+        <script src="assets/js/main.js"></script>
+    </body>
 </html>
